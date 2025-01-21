@@ -1,0 +1,51 @@
+site_name: Hoster
+repo_url: https://github.com/yaroslav-gwit/HosterCore
+repo_name: HosterCore
+
+markdown_extensions:
+  - toc:
+      title: On this page
+      permalink: true
+
+theme:
+  logo: assets/hoster-core-logo.png
+  name: material
+  features:
+    - content.code.copy
+    - content.code.annotate
+    - navigation.instant
+    - navigation.tracking
+  palette:
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: light-blue
+      accent: blue
+      toggle:
+        icon: material/brightness-7
+        name: Dark mode
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: light-blue
+      accent: blue
+      toggle:
+        icon: material/brightness-4
+        name: Light mode
+
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - attr_list
+  - md_in_html
+
+plugins:
+  - glightbox
+  - search:
+      lang: en
+
